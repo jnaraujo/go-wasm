@@ -1,2 +1,2 @@
 build wasm:
-	GOOS=js GOARCH=wasm go build -o ./test/main.wasm ./cmd/gowasm
+	GOOS=js GOARCH=wasm go build -ldflags "-s -w" -o ./test/main.wasm ./cmd/gowasm
